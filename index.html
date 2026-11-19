@@ -5,10 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#11120f">
         <meta name="description" content="The official CheeseySMP rules for Minecraft and Discord. Play fair, respect the community, and keep CheeseySMP fun.">
+        <meta name="color-scheme" content="dark">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Official Server Rules — CheeseySMP">
+        <meta property="og:description" content="The official CheeseySMP rules for Minecraft and Discord. Play fair, respect the community, and keep CheeseySMP fun.">
+        <meta property="og:url" content="https://rules.cheeseysmp.net/">
+        <link rel="canonical" href="https://rules.cheeseysmp.net/">
         <title>Official Server Rules — CheeseySMP</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -16,7 +19,7 @@
             <header class="site-header">
                 <a class="brand" href="#top" aria-label="CheeseySMP rules home">
                     <span class="brand-mark" aria-hidden="true">C</span>
-                    <span>©CHEESEY<span class="brand-light">SMP</span></span>
+                    <span>CHEESEY<span class="brand-light">SMP</span></span>
                 </a>
                 <a class="header-link" href="https://rules.cheeseysmp.net">OFFICIAL RULES <span aria-hidden="true">↗</span></a>
             </header>
@@ -29,8 +32,9 @@
                         <p class="hero-description">The official guide to playing and hanging out on CheeseySMP. Know the rules, respect the community, and enjoy the chaos—fairly.</p>
                         <div class="hero-meta">
                             <span><span class="meta-dot"></span> MINECRAFT + DISCORD</span>
-                            <span>LAST UPDATED: [INSERT PUBLICATION DATE]</span>
+                            <span>LAST UPDATED: november 19 2026</span>
                         </div>
+                        <a class="appeal-cta" href="#appeals">Appeal a punishment <span aria-hidden="true">↓</span></a>
                     </div>
                     <div class="hero-art" aria-hidden="true">
                         <div class="orbit orbit-one"></div>
@@ -71,6 +75,15 @@
                         <a class="contents-link" href="#compensation"><span>04</span> Compensation <b>↘</b></a>
                         <a class="contents-link" href="#clarifications"><span>05</span> Official rules &amp; clarifications <b>↘</b></a>
                     </nav>
+                    <form class="search-form" role="search" action="/" method="get">
+                        <label for="rules-search">Search the rules</label>
+                        <div class="search-controls">
+                            <input id="rules-search" type="search" autocomplete="off" placeholder="Try “X-ray”, “appeal”, or “raiding”" aria-describedby="search-help">
+                        <button type="reset" id="search-clear">Clear</button>
+                        </div>
+                        <p id="search-help" class="search-help">Search runs in your browser only; your query is not sent anywhere.</p>
+                        <p id="search-results" class="search-results" role="status" aria-live="polite"></p>
+                    </form>
                 </section>
 
                 <div class="rules-document">
@@ -107,10 +120,11 @@
 
                         <article class="rule-block" id="duplication">
                             <h3><span>1.3</span> Duplication Exploits</h3>
-                            <div class="callout callout-red"><strong>ALL duplication glitches and exploits are prohibited. There are zero exceptions.</strong></div>
+                            <div class="callout callout-red duplication-callout"><span class="callout-label">ZERO EXCEPTIONS</span><strong>ALL duplication glitches and exploits are prohibited. There are zero exceptions.</strong></div>
                             <p>This includes:</p>
                             <ul class="rule-points two-column"><li>TNT duplication.</li><li>Carpet duplication.</li><li>String duplication.</li><li>Gravity-block duplication.</li><li>Dragon egg duplication.</li><li>Any other unintended item or block duplication exploit.</li></ul>
                             <ol class="numbered-rules"><li>Intentionally using duplication glitches is prohibited.</li><li>Creating or operating duplication machines is prohibited.</li><li>Sharing duplication methods for the purpose of exploiting the server is prohibited.</li><li>Accidentally discovering a duplication glitch is not automatically punishable.</li><li>Players who discover a duplication glitch must stop exploiting it and report it.</li><li>Ordinary intended item production, such as normal crafting and farming, is not considered duplication.</li></ol>
+                            <p>Intended Minecraft mechanics such as normal crafting and farming are not automatically duplication exploits.</p>
                             <p><strong>No duplication glitch is permitted, regardless of the item or method involved.</strong></p>
                         </article>
 
@@ -131,8 +145,8 @@
                             <h3><span>1.6</span> Server Performance and Lag Machines</h3>
                             <p>Players may build farms and redstone mechanisms as long as they do not cause unacceptable server performance issues.</p>
                             <p>A farm or mechanism may violate this rule when:</p>
-                            <ul class="rule-points"><li>Server TPS falls below <strong>18.5</strong> while it operates.</li><li>Staff can reasonably confirm that the mechanism caused or materially contributed to the performance problem.</li></ul>
-                            <p>A low TPS reading alone is not proof that a particular farm caused the issue.</p>
+                            <ul class="rule-points"><li>Server TPS falls below <strong>18.5</strong> while it operates.</li><li>Staff can reasonably establish that the specific mechanism caused or materially contributed to the performance problem.</li></ul>
+                            <p>A single brief TPS drop or low TPS reading alone is not proof that a particular farm caused the issue. No specific measurement duration is currently defined in this rule.</p>
                             <div class="callout callout-gold"><strong>Enforcement</strong><ol><li>Staff may temporarily disable mechanisms that threaten server stability.</li><li>Accidental performance problems will generally receive a warning and an opportunity to fix the issue.</li><li>Repeatedly operating a mechanism after being instructed to fix it may result in punishment.</li><li>Deliberately creating lag machines or attempting to crash the server may result in an immediate ban.</li><li>Punishments depend on severity, intent, evidence, and impact.</li></ol></div>
                         </article>
 
@@ -175,7 +189,7 @@
                         <article class="rule-block" id="punishment-types"><h3><span>3.1</span> Punishment Types</h3><p>Staff may issue:</p><ol class="numbered-rules"><li>Warnings.</li><li>Message removals.</li><li>Temporary mutes.</li><li>Temporary restrictions.</li><li>Temporary bans.</li><li>Permanent bans.</li></ol></article>
                         <article class="rule-block" id="severity"><h3><span>3.2</span> Punishment Severity</h3><p>Punishments are based on:</p><ul class="rule-points two-column"><li>The rule violated.</li><li>Severity of the behavior.</li><li>Available evidence.</li><li>Whether the violation was intentional.</li><li>Impact on other players or the server.</li><li>Previous confirmed violations.</li><li>Repeated behavior after warnings.</li></ul><p>Minor first-time violations generally receive a warning. Serious or deliberate violations may result in immediate punishment without a warning. Confirmed cheating does not automatically require a permanent ban.</p></article>
                         <article class="rule-block" id="evidence"><h3><span>3.3</span> Evidence Requirements</h3><p>Significant punishments must be supported by reasonable, documented evidence. Acceptable evidence may include:</p><ul class="rule-points two-column"><li>Server logs.</li><li>Plugin logs.</li><li>Screenshots.</li><li>Video recordings.</li><li>Chat records.</li><li>Verified technical findings.</li><li>Other relevant, reliable information.</li></ul><p>Staff should consider the context and reliability of evidence.</p><div class="callout callout-red"><strong>Suspicion alone is insufficient for a cheating ban.</strong></div><p>Staff should record the violated rule and reason for the punishment.</p></article>
-                        <article class="rule-block" id="appeals"><h3><span>3.4</span> Appeals</h3><p>Players may appeal through the designated official appeal system. An appeal should include:</p><ul class="rule-points"><li>Minecraft or Discord username.</li><li>Punishment reason.</li><li>Explanation of the appeal.</li><li>Supporting evidence, if available.</li></ul><p>Appeals should be reviewed fairly, preferably by a staff member who did not issue the original punishment. Submitting an appeal does not guarantee that a punishment will be reversed. Players may not evade their punishment while awaiting an appeal decision.</p></article>
+                        <article class="rule-block" id="appeals"><h3><span>3.4</span> Appeals</h3><p>Players may appeal through the designated official appeal system. The appeal destination has not been provided for this website. Please use the official appeal system identified by CheeseySMP staff; do not submit account credentials or passwords. An appeal should include:</p><ul class="rule-points"><li>Minecraft or Discord username.</li><li>Punishment reason.</li><li>Explanation of the appeal.</li><li>Supporting evidence, if available.</li></ul><p>Appeals should be reviewed fairly, preferably by a staff member who did not issue the original punishment. Submitting an appeal does not guarantee that a punishment will be reversed. Players may not evade their punishment while awaiting an appeal decision.</p><p class="owner-note"><strong>Appeal destination:</strong> Add the owner-approved appeal URL or instructions here before deployment. No destination has been invented.</p></article>
                         <article class="rule-block" id="staff-accountability"><h3><span>3.5</span> Staff Accountability</h3><p>Staff must enforce rules fairly and consistently. Staff members may not issue punishments based on personal disagreements, favoritism, or retaliation. Punishments found to be incorrect should be reviewed and corrected.</p></article>
                         <article class="rule-block" id="emergency"><h3><span>3.6</span> Emergency Moderation</h3><p>Staff may temporarily restrict accounts or disable mechanisms when necessary to protect the server or community from an immediate threat. Such action must be documented and reviewed. Temporary protective action does not automatically establish guilt.</p></article>
                         <article class="rule-block" id="rule-changes"><h3><span>3.7</span> Rule Changes</h3><p>Rule changes take effect when officially published. Players will not be punished retroactively for behavior that was permitted when it occurred. Players are responsible for reviewing announced rule updates.</p></article>
@@ -194,9 +208,11 @@
             </main>
 
             <footer class="site-footer">
-                <span>©CHEESEY<span class="brand-light">SMP</span></span>
-                <a href="https://rules.cheeseysmp.net">RULES.CHEESEYSMP.NET <span class="footer-heart">↗</span></a>
+                <span>© 2026 CheeseySMP</span>
+                <a href="/legal.html">Legal information</a>
             </footer>
+            <p class="minecraft-disclaimer">CheeseySMP is not affiliated with, endorsed by, or associated with Mojang Studios or Microsoft. Minecraft is a trademark of Microsoft Corporation.</p>
         </div>
+        <script src="rules.js" defer></script>
     </body>
 </html>

@@ -24,6 +24,6 @@ This is a static site. The checklist is guidance only; this repository cannot co
 
 - Source currently has no analytics, form, appeal integration, third-party embed, or nonessential browser storage. Search executes locally and does not transmit its query. External Google Fonts were removed.
 - The hosting provider may process request IPs/access logs. Provider identity, purposes, recipients, and retention are not established in this project. Confirm those facts before writing a detailed privacy notice.
-- Confirm an owner-approved privacy contact, appeal URL/instructions, and official Discord invite before adding destinations. Do not publish a made-up address, KvK number, or private contact details.
+- The appeal process uses the official Discord invite (`https://discord.gg/cheeseysmp`): the punished player must join and open a ticket. Discord-banned players cannot have an appeal accepted; alternate-account and third-party appeals are not accepted. Do not add a separate appeal destination or form.
 - Confirm whether operator identification is legally required for this site and identify the correct operator. The discreet legal-information page must be completed with verified details before deployment if disclosures are required; do not publish unverified personal or business data.
 - Review current Mojang/Microsoft usage guidance when updating the non-affiliation disclaimer.

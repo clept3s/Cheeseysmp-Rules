@@ -185,16 +185,6 @@ h3 { margin-bottom: 5px; font: 600 24px 'Space Grotesk', sans-serif; letter-spac
 .site-footer { align-items: center; gap: 16px; line-height: 1.8; }
 .site-footer > span { max-width: 72%; }
 .site-footer a { min-height: 44px; display: inline-flex; align-items: center; white-space: nowrap; }
-.legal-main { min-height: 60vh; max-width: 760px; padding: 72px 0 60px; }
-.legal-title { margin: 0 0 15px; color: var(--text); font: 700 clamp(36px, 6vw, 54px)/1.05 'Space Grotesk', Arial, sans-serif; letter-spacing: -.055em; }
-.legal-intro { max-width: 650px; margin: 0 0 25px; color: #c3c0b5; font-size: 16px; line-height: 1.75; }
-.legal-card { margin: 15px 0; padding: 19px 21px; border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,.025); }
-.legal-card h2 { margin-bottom: 13px; font-size: 19px; }
-.legal-card p { margin: 0 0 10px; color: #c3c0b5; font-size: 14px; line-height: 1.75; }
-.legal-card p:last-child { margin-bottom: 0; }
-.legal-card strong { color: #e8e5da; }
-.legal-note { color: #aaa89e; font-size: 12px; line-height: 1.7; }
-.legal-footer { margin-top: 0; }
 
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
@@ -255,6 +245,4 @@ h3 { margin-bottom: 5px; font: 600 24px 'Space Grotesk', sans-serif; letter-spac
     .search-controls button { min-width: 60px; }
     .site-footer { align-items: flex-start; flex-direction: column; }
     .site-footer > span { max-width: 100%; }
-    .legal-main { min-height: 65vh; padding: 48px 0 35px; }
-    .legal-card { padding: 16px; }
 }

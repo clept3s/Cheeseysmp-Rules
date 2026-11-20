@@ -207,12 +207,54 @@
                 </div>
             </main>
 
-            <footer class="site-footer">
-                <span>© 2026 CheeseySMP</span>
-                <a href="/legal.html">Legal information</a>
-            </footer>
-            <p class="minecraft-disclaimer">CheeseySMP is not affiliated with, endorsed by, or associated with Mojang Studios or Microsoft. Minecraft is a trademark of Microsoft Corporation.</p>
         </div>
+
+        <!-- CheeseySMP reusable footer: copy from START to END -->
+        <style>
+          .cheeseysmp-footer { box-sizing: border-box; width: 100%; margin-top: 64px; background: #11140f; color: #e9ede4; border-top: 1px solid #363c31; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+          .cheeseysmp-footer *, .cheeseysmp-footer *::before, .cheeseysmp-footer *::after { box-sizing: border-box; }
+          .cheeseysmp-footer__inner { max-width: 1180px; margin: 0 auto; padding: 36px 24px 24px; }
+          .cheeseysmp-footer__top { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-bottom: 28px; }
+          .cheeseysmp-footer__brand { font-size: 22px; font-weight: 800; margin: 0 0 6px; letter-spacing: .01em; color: #e9ede4; }
+          .cheeseysmp-footer__tagline { margin: 0; color: #aeb6a6; font-size: 14px; }
+          .cheeseysmp-footer__nav { display: flex; flex-wrap: wrap; gap: 14px 24px; }
+          .cheeseysmp-footer__nav a { color: #e9ede4; text-decoration: none; font-size: 14px; font-weight: 600; }
+          .cheeseysmp-footer__nav a:hover { color: #d8f36a; }
+          .cheeseysmp-footer__nav a:focus-visible { outline: 2px solid #d8f36a; outline-offset: 4px; }
+          .cheeseysmp-footer__bottom { border-top: 1px solid #363c31; padding-top: 20px; display: grid; grid-template-columns: 1fr 2fr; gap: 22px; align-items: start; }
+          .cheeseysmp-footer__copyright, .cheeseysmp-footer__disclaimer { margin: 0; color: #aeb6a6; font-size: 12px; line-height: 1.65; }
+          @media (max-width: 650px) {
+            .cheeseysmp-footer__top { flex-direction: column; align-items: flex-start; }
+            .cheeseysmp-footer__bottom { grid-template-columns: 1fr; gap: 10px; }
+            .cheeseysmp-footer__inner { padding: 28px 20px 22px; }
+          }
+        </style>
+        <footer class="cheeseysmp-footer" aria-label="CheeseySMP website footer">
+          <div class="cheeseysmp-footer__inner">
+            <div class="cheeseysmp-footer__top">
+              <div>
+                <p class="cheeseysmp-footer__brand">CheeseySMP</p>
+                <p class="cheeseysmp-footer__tagline">Your Minecraft survival adventure starts here.</p>
+              </div>
+              <nav class="cheeseysmp-footer__nav" aria-label="Official CheeseySMP links">
+                <a href="https://cheeseysmp.net">Home</a>
+                <a href="https://store.cheeseysmp.net">Store</a>
+                <a href="https://rules.cheeseysmp.net">Rules</a>
+                <a href="https://discord.gg/cheeseysmp">Discord</a>
+              </nav>
+            </div>
+            <div class="cheeseysmp-footer__bottom">
+              <p class="cheeseysmp-footer__copyright">© <span class="cheeseysmp-footer__year">2026</span> CheeseySMP. All rights reserved.</p>
+              <p class="cheeseysmp-footer__disclaimer">CheeseySMP is an independent Minecraft server and is not affiliated with, endorsed by, or officially associated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang Studios.</p>
+            </div>
+          </div>
+        </footer>
+        <script>
+          document.querySelectorAll('.cheeseysmp-footer__year').forEach(function (el) {
+            el.textContent = new Date().getFullYear();
+          });
+        </script>
+        <!-- END CheeseySMP reusable footer -->
         <script src="rules.js" defer></script>
     </body>
 </html>
